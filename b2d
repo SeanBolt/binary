@@ -1,0 +1,13 @@
+#!/usr/local/bin/python
+
+import sys
+
+if len(sys.argv) == 2:
+	user_input = sys.argv[1]
+	try:
+		decnum = int(user_input, 2)
+		print(decnum)
+	except ValueError:
+		print('Enter a Binary number. Please try again.\n')		
+else:
+	print('Can only accept one user input value. Please try again.')
